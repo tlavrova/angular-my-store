@@ -18,6 +18,10 @@ import { products } from '../products'
       </p>
 
       <button (click)="share()">Share</button>
+
+      <app-product-alerts
+        [product]="product"
+      ></app-product-alerts>
     </div>
   `
 })
