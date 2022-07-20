@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
   template: `
     <app-top-bar></app-top-bar>
-    <app-product-list></app-product-list>
 
     <div class="container">
       <router-outlet></router-outlet>
