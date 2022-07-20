@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  template: `
+    <app-top-bar></app-top-bar>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  `
 })
 export class AppComponent {
-  title = 'angular-my-store';
 }
