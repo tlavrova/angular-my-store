@@ -8,7 +8,10 @@ import { products } from '../products'
     <h2>Products</h2>
     <div *ngFor="let product of products">
       <h3>
-        <a [title]="product.name + ' details'">
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]"
+        >
           {{ product.name }}
         </a>
       </h3>
